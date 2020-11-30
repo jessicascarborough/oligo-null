@@ -1,0 +1,44 @@
+---
+title: "Sample Size Calculation w/ Oligometastases Calculation"
+author: "Jessica Scarborough"
+date: "11/2/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Packages
+
+```{r load_packages}
+
+library(powerSurvEpi)
+library(tidyverse)
+
+```
+
+
+
+# Run Sample Size Calculation
+
+
+```{r ssize_calc}
+
+
+# ssizeCT.default(power = 0.8,
+#               k = 2,
+#               pE = 0.2,
+#               pC = 0.8,
+#               RR = 0.57,
+#               alpha = 0.2)
+
+
+
+delta_t300 <- (1/0.005)*log((300/(300-200)))
+delta_t500 <- (1/0.005)*log((500/(500-200)))
+delta_t1000 <- (1/0.005)*log((1000/(1000-200)))
+
+
+```
+
